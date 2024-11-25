@@ -2,7 +2,7 @@ export const TONMOY_CONTACT = {
   fullname: "M.Riajul Jannath Tonmoy",
   brandname: "Tonmoy",
   description: "Turning Vision Into Reality With Code And Design.",
-  profileUrl: "https://m-riajul-jannath-tonmoy.vercel.app",
+  profileUrl: "/",
   twitterUrl: "https://twitter.com/tonmoy7218",
   linkedinUrl: "https://www.linkedin.com/in/tonmoy7218",
   fbUrl:"https://www.facebook.com/tonmoy.tonmoy.923519",
