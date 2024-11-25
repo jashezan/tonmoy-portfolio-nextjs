@@ -8,6 +8,7 @@ import { LinkArrow } from "@/components/icons";
 import lightBuld from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import TransitionEffect from "@/components/TransitionEffect";
 import { TONMOY_CONTACT } from "@/data/contact";
+import React from "react";
 
 export default function Home() {
   return (
@@ -20,22 +21,41 @@ export default function Home() {
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0 md:pt-6 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 md:w-full">
+            <div className="relative w-1/2 md:w-full">
+              {/* Main Image */}
               <Image
                 src={profilePic}
                 alt="saohwan"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full"
+                className="w-full h-auto lg:hidden md:inline-block md:w-full rounded-full dark:shadow-sm dark:shadow-white"
                 priority
-                sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              50vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
+
+              {/* Top-Left Logo */}
+              <div className="absolute top-4 left-4 md:-top-24 rounded-full dark:shadow-sm dark:shadow-white">
+                <Image
+                  src="/images/aiub-logo.png"
+                  alt="Top Left Logo"
+                  width={100} // Adjust size as needed
+                  height={100}
+                  className="w-auto h-auto"
+                />
+              </div>
+
+              {/* Top-Right Logo */}
+              <div className="absolute top-4 right-4 md:-top-24 rounded-full dark:shadow-sm dark:shadow-white">
+                <Image
+                  src="/images/sydney-logo.png"
+                  alt="Top Right Logo"
+                  width={100} // Adjust size as needed
+                  height={100}
+                  className="w-auto h-auto"
+                />
+              </div>
             </div>
-            <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
-              <AnimatedText
-                text="Turning Vision Into Reality With Code And Design."
-                className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl"
-              />
+
+            <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center p-5">
+              <AnimatedText text="Hi, Tonmoy Here" />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                 A dedicated CSE student at AIUB, I have a solid foundation in
                 programming, algorithms, and emerging technologies like AI and
@@ -46,7 +66,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="/dummy.pdf"
+                  href={TONMOY_CONTACT.cvUrl}
                   target={"_blank"}
                   className="flex items-center bg-dark text-light p-2.5 px-6
                   rounded-lg text-lg font-semibold hover:bg-light hover:text-dark

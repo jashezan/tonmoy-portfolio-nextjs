@@ -6,7 +6,7 @@ import { TONMOY_CONTACT } from "@/data/contact";
 const Footer = () => {
   return (
     <footer
-      className="w-full border-t-2 border-solid border-dark
+      className="w-full border-t-2 border-solid border-dark/10
         font-medium text-lg dark:text-light dark:border-light sm:text-base"
     >
       <Layout className="py-8 flex items-center justify-between lg:flex-col lg:py-6">
@@ -14,9 +14,7 @@ const Footer = () => {
         <div className="flex items-center lg:py-2">
           <Link
             href={TONMOY_CONTACT.profileUrl}
-            className="underline
-                underline-offset-2
-                "
+            className="underline underline-offset-2"
             target={"_blank"}
           >
             {TONMOY_CONTACT.brandname} Portfolio
@@ -25,9 +23,7 @@ const Footer = () => {
         <Link
           href={`mailto:${TONMOY_CONTACT.email}`}
           target={"_blank"}
-          className="underline
-                underline-offset-2
-            "
+          className="underline underline-offset-2"
         >
           Say hello
         </Link>

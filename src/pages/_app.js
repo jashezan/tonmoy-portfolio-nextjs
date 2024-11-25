@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import {Montserrat} from "next/font/google";
+import {Montserrat, Caveat} from "next/font/google";
 import Head from "next/head";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
@@ -12,6 +12,11 @@ const montserrat = Montserrat({
     variable: "--font-mont",
 });
 
+export const caveat = Caveat({
+    subsets: ["latin"],
+    variable: "--font-caveat",
+});
+
 export default function App({Component, pageProps}) {
     const router = useRouter();
     return (
@@ -21,7 +26,7 @@ export default function App({Component, pageProps}) {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <main
-                className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}
+                className={`${montserrat.variable} ${caveat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}
             >
                 <NavBar/>
                 <AnimatePresence mode="wait">

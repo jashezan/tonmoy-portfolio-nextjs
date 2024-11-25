@@ -2,17 +2,17 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import {
-  DribbbleIcon,
-  GithubIcon,
-  LinkedInIcon,
-  MoonIcon,
-  PinterestIcon,
-  SunIcon,
-  TwitterIcon,
-} from "./icons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "@/components/hooks/useThemeSwitcher";
+import { TONMOY_CONTACT } from "@/data/contact";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaMoon,
+  FaSun,
+  FaSquareTwitter,
+  FaLinkedin,
+} from "react-icons/fa6";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -51,11 +51,9 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
       {title}
 
       <span
-        className={`
-      h-[1px] inline-block bg-light 
-      absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
-       ${router.asPath === href ? "w-full" : "w-0"}
-      dark:bg-dark`}
+        className={`h-[1px] inline-block bg-light/25 absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+          router.asPath === href ? "w-full" : "w-0"
+        } dark:bg-dark`}
       >
         &nbsp;
       </span>
@@ -101,37 +99,46 @@ const NavBar = () => {
         <nav>
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
-          {/* <CustomLink href="/projects" title="Projects" className="mx-4"/> */}
+          <CustomLink href="/projects" title="Projects" className="mx-4" />
           <CustomLink href="/articles" title="Articles" className="mx-4" />
           <CustomLink href="/contact" title="Contact" className="ml-4" />
         </nav>
         <nav className="flex items-center justify-center flex-wrapx">
           <motion.a
-            href="https://twitter.com"
+            href={TONMOY_CONTACT.twitterUrl}
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             className="w-6 mr-3"
           >
-            <TwitterIcon />
+            <FaSquareTwitter className="h-5 w-5 hover:scale-110" />
           </motion.a>
           <motion.a
-            href="https://www.linkedin.com/in/sangwan-lee-3026b32a5/"
+            href={TONMOY_CONTACT.linkedinUrl}
             target={"_blank"}
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <LinkedInIcon />
+            <FaLinkedin className="h-5 w-5 hover:scale-110" />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href={TONMOY_CONTACT.fbUrl}
             target={"_blank"}
-            className="w-6 mx-3 bg-light rounded-full"
+            className="w-6 mx-3"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <PinterestIcon />
+            <FaFacebook className="h-5 w-5 hover:scale-110" />
+          </motion.a>
+          <motion.a
+            href={TONMOY_CONTACT.instaUrl}
+            target={"_blank"}
+            className="w-6 mx-3"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <FaInstagram className="h-5 w-5 hover:scale-110" />
           </motion.a>
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -144,9 +151,9 @@ const NavBar = () => {
                     `}
           >
             {mode === "dark" ? (
-              <SunIcon className={"fill-dark"} />
+              <FaSun className="h-5 w-5 fill-dark" />
             ) : (
-              <MoonIcon className={"fill-dark"} />
+              <FaMoon className="h-5 w-5 fill-dark" />
             )}
           </button>
         </nav>
@@ -173,7 +180,12 @@ const NavBar = () => {
               className=""
               toggle={handleClick}
             />
-            {/* <CustomMobileLink href="/projects" title="Projects" className="" toggle={handleClick}/> */}
+            <CustomMobileLink
+              href="/projects"
+              title="Projects"
+              className=""
+              toggle={handleClick}
+            />
             <CustomMobileLink
               href="/articles"
               title="Articles"
@@ -189,31 +201,40 @@ const NavBar = () => {
           </nav>
           <nav className="flex items-center justify-center flex-wrap mt-2">
             <motion.a
-              href="https://twitter.com"
+              href={TONMOY_CONTACT.twitterUrl}
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               className="w-6 mr-3 sm:mx-1"
             >
-              <TwitterIcon />
+              <FaSquareTwitter className="h-5 w-5 hover:scale-110" />
             </motion.a>
             <motion.a
-              href="https://www.linkedin.com/in/sangwan-lee-3026b32a5/"
+              href={TONMOY_CONTACT.linkedinUrl}
               target={"_blank"}
               className="w-6 mx-3"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
-              <LinkedInIcon />
+              <FaLinkedin className="h-5 w-5 hover:scale-110" />
             </motion.a>
             <motion.a
-              href="https://twitter.com"
+              href={TONMOY_CONTACT.fbUrl}
               target={"_blank"}
-              className="w-6 mx-3 bg-light rounded-full sm:mx-1"
+              className="w-6 mx-3"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
-              <PinterestIcon />
+              <FaFacebook className="h-5 w-5 hover:scale-110" />
+            </motion.a>
+            <motion.a
+              href={TONMOY_CONTACT.instaUrl}
+              target={"_blank"}
+              className="w-6 mx-3"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <FaInstagram className="h-5 w-5 hover:scale-110" />
             </motion.a>
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -226,9 +247,9 @@ const NavBar = () => {
                     `}
             >
               {mode === "dark" ? (
-                <SunIcon className={"fill-dark"} />
+                <FaSun className="h-5 w-5 fill-dark" />
               ) : (
-                <MoonIcon className={"fill-dark"} />
+                <FaMoon className="h-5 w-5 fill-dark" />
               )}
             </button>
           </nav>

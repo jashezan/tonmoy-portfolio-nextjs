@@ -2,29 +2,42 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "@/components/Lilcon";
 import { EDUCATION_INFO } from "@/data/education";
+import Image from "next/image";
 
-const Details = ({ type, time, place, info }) => {
+const Details = ({ type, time, place, info, imageLink }) => {
   const ref = useRef(null);
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between
-        md:w-[80%]
-        "
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
     >
       <LiIcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
+        className="flex flex-row items-center w-full gap-6"
       >
-        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
-          {type}
-        </h3>
-        <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
-          {time} | {place}
-        </span>
-        <p className="font-medium w-full md:text-sm">{info}</p>
+        {/* Conditionally render the image */}
+        {imageLink && (
+          <Image
+            src={imageLink}
+            alt={`${place} logo`}
+            className="flex-shrink-0 min-w-20 min-h-20 rounded-lg object-cover"
+            width={400}
+            height={200}
+            loading="lazy"
+          />
+        )}
+        <div className="flex flex-col items-start w-full">
+          <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+            {type}
+          </h3>
+          <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
+            {time} | {place}
+          </span>
+          <p className="font-medium w-full md:text-sm">{info}</p>
+        </div>
       </motion.div>
     </li>
   );
@@ -55,6 +68,7 @@ const Education = () => {
               time={education.time}
               place={education.place}
               info={education.info}
+              imageLink={education.imageLink}
             />
           ))}
         </ul>

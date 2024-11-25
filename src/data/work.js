@@ -1,23 +1,18 @@
 export const WORK_EXPERIENCES = [
   {
-    position: "Head of Marketing",
-    company: "Google",
-    time: "2022-Present",
-    address: "Mountain View, CA",
-    work: "Led a team of 50+ marketing professionals to develop and execute marketing strategies for Google products. Increased user engagement by 30% through targeted campaigns and partnerships.",
+    position: "CEO",
+    company: "Sarkar Ltd.",
+    time: "2019-Present",
+    address: "Rajshahi, Bangladesh",
+    work: "Leading a family-owned business that specializes in the production and distribution of consumer goods. Overseeing all aspects of operations, including sales, marketing, finance, and human resources. Implementing strategic plans to drive business growth and profitability.", 
+    imageLink: "/info/ins/sarkar.jpg",
   },
   {
-    position: "Marketing Manager",
-    company: "Facebook",
-    time: "2019-2022",
-    address: "Menlo Park, CA",
-    work: "Managed a team of 20+ marketing specialists to drive user acquisition and retention. Developed and implemented marketing strategies for Facebook products, resulting in a 25% increase in user base.",
-  },
-  {
-    position: "Marketing Specialist",
-    company: "Amazon",
-    time: "2016-2019",
-    address: "Seattle, WA",
-    work: "Executed marketing campaigns and initiatives to promote Amazon products and services. Collaborated with cross-functional teams to drive user engagement and brand awareness.",
-  },
+    position: "Executive Member",
+    company: "Fleet BD",
+    time: "2020-2022",
+    address: "Rajshahi, Bangladesh",
+    work: "Served as an executive member of a local NGO focused on community development and social welfare. Participated in various projects and initiatives to address social issues and promote sustainable development in the region.", 
+    imageLink: "/info/ins/fleet.jpg",
+  }
 ];
