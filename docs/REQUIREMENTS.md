@@ -30,3 +30,7 @@ Student Cabinet, JHS, 2017
 Champion (Captain), Rajshahi Division Cricket, 2018, Rajshahi
 
 
+About List Logo Change
+Add JU in Education
+Change Hobby List Logo
+Basundhara 

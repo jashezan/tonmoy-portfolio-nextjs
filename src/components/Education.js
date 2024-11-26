@@ -3,6 +3,7 @@ import { motion, useScroll } from "framer-motion";
 import LiIcon from "@/components/Lilcon";
 import { EDUCATION_INFO } from "@/data/education";
 import Image from "next/image";
+import { hennyPenny } from "@/pages/_app";
 
 const Details = ({ type, time, place, info, imageLink }) => {
   const ref = useRef(null);
@@ -51,7 +52,7 @@ const Education = () => {
   });
   return (
     <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+      <h2 className={`font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16 ${hennyPenny.className}`}>
         Education
       </h2>
       <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">

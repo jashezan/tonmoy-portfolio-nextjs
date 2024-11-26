@@ -3,8 +3,6 @@ import { TONMOY_CONTACT } from "@/data/contact";
 import Layout from  "@/components/Layout";
 import TransitionEffect from  "@/components/TransitionEffect";
 import Head from  "next/head";
-import AnimatedText from "@/components/AnimatedText";
-import { ImageGrid } from "@/components/ImageGrid";
 import IdolPersonalities from "@/components/Idol";
 
 const ExtraCurriculur = () => {

@@ -1,10 +1,10 @@
 export const EDUCATION_INFO = [
   // upcoming education info in sydney
   {
-    type: "(Upcoming) Master of Information Technology",
+    type: "Bachelor of Computer Science (Credit Transfer)",
     time: "2025-2027",
     place: "University of Sydney",
-    info: "Pursuing a Master's degree in Information Technology with a focus on software development, data analytics, and cybersecurity. Planning to leverage advanced coursework and hands-on projects to build expertise in cutting-edge technologies and prepare for a career in the tech industry.",
+    info: "Transferring credits to the University of Sydney to complete a Bachelor's degree in Information Technology, focusing on software development, data analytics, and cybersecurity. Planning to leverage advanced coursework and hands-on projects to build expertise in cutting-edge technologies and prepare for a career in the tech industry.",
     imageLink: "/info/ins/sydney.jpg",
   },
   {
@@ -13,6 +13,13 @@ export const EDUCATION_INFO = [
     place: "American International University-Bangladesh (AIUB)",
     info: "Currently pursuing a CSE degree with a focus on software development, artificial intelligence, and data science. Actively involved in academic projects and extracurricular activities, including hackathons, coding competitions, and research initiatives. Building a strong foundation in computer science and preparing for a career in technology.",
     imageLink: "/info/ins/aiub.jpg",
+  },
+  {
+    type: "Bachelor of Science in Mathematics (BSc)",
+    time: "2023-Present",
+    place: "Jahangirnagar University (JU)",
+    info: "I passed the HSC examination in 2021 and got the opportunity to enroll in the Mathematics Department at Jahangirnagar University through the admission test. I studied there for a year. However, for some personal reason, I canceled my enrollment there and joined American International University-Bangladesh.",
+    imageLink: "/info/ins/ju.jpg",
   },
   {
     type: "Higher Secondary Certificate (HSC)",

@@ -1,27 +1,27 @@
 export const aboutPageData = [
-  { id: 1, src: "/info/hobby.jpg", heading: "Skills", link: "/skill" },
+  { id: 1, src: "/info/hobby.png", heading: "Skills", link: "/skill" },
   {
     id: 2,
-    src: "/info/experience.jpg",
+    src: "/info/experience.png",
     heading: "Experience",
     link: "/experience",
   },
   {
     id: 3,
-    src: "/info/school.jpg",
+    src: "/info/education.png",
     heading: "Education",
     link: "/education",
   },
   {
     id: 4,
-    src: "/info/extra-cur.jpg",
+    src: "/info/extracurricular.png",
     heading: "Extra Curriculum",
     link: "/cur",
   },
-  { id: 5, src: "/info/hobby.jpg", heading: "Hobbies", link: "/hobby" },
+  { id: 5, src: "/info/hobby.png", heading: "Hobbies", link: "/hobby" },
   {
     id: 6,
-    src: "/info/person/tonmoy-father.jpeg",
+    src: "/info/idol.png",
     heading: "Idol",
     link: "/idol",
   },

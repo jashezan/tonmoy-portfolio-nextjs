@@ -6,6 +6,7 @@ import Head from "next/head";
 import AnimatedText from "@/components/AnimatedText";
 import { MOVIES } from "@/data/hobby";
 import { ImageGrid } from "@/components/ImageGrid";
+import { hennyPenny } from "./_app";
 
 const MoviesPage = () => {
   return (
@@ -21,8 +22,8 @@ const MoviesPage = () => {
             text="Movies are the windows to worlds we might never visit but can feel deeply in our hearts."
             className="lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
-          <section className="my-5">
-            <h2 className="text-4xl font-bold">Favourite Movies and Series</h2>
+          <section className="my-20">
+            <h2 className={`text-6xl font-extrabold ${hennyPenny.className}`}>Favourite Movies and Series</h2>
             <ImageGrid sampleData={MOVIES} />
           </section>
         </Layout>

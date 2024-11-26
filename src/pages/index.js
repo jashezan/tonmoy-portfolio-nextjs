@@ -32,11 +32,11 @@ export default function Home() {
               />
 
               {/* Top-Left Logo */}
-              <div className="absolute top-4 left-4 md:-top-24 rounded-full dark:shadow-sm dark:shadow-white">
+              <div className="absolute top-4 -left-8 md:-top-24 rounded-full dark:shadow-sm dark:shadow-white">
                 <Image
                   src="/images/aiub-logo.png"
                   alt="Top Left Logo"
-                  width={100} // Adjust size as needed
+                  width={100}
                   height={100}
                   className="w-auto h-auto"
                 />

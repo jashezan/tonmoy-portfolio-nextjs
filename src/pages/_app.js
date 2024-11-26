@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import {Montserrat, Caveat} from "next/font/google";
+import {Montserrat, Caveat, Henny_Penny} from "next/font/google";
 import Head from "next/head";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
@@ -15,6 +15,12 @@ const montserrat = Montserrat({
 export const caveat = Caveat({
     subsets: ["latin"],
     variable: "--font-caveat",
+});
+
+export const hennyPenny = Henny_Penny({
+    subsets: ["latin"],
+    weight: ["400"],
+    variable: "--font-henny",
 });
 
 export default function App({Component, pageProps}) {

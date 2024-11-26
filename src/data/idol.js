@@ -32,7 +32,7 @@ export const personalities = [
     id: 4,
     name: "Iftekhar Mahmud Shuvo - (My Favourite Teacher)",
     description:
-      "Iftekhar Mahmud Shuvo is a teacher who has inspired me to pursue my passion for programming and web development. He is a great teacher and a great person. I am grateful to him for his guidance and support. I am proud to be his student.",
+      "My esteemed teacher, Iftekhar Mahmud Shuvo, is an honorable lecturer in the English Department at American International University-Bangladesh. I have observed him closely and witnessed his exceptional dedication to his work and teaching, which is rarely found in most educators. He is deeply respectful of his responsibilities and is a highly diligent individual. In essence, I have learned the value of hard work from him. He is not just a teacher but also a kind person and a mentor who feels like a friend. I have gained many valuable lessons from him that will guide me in shaping my life.",
     pictures: { id: 1, src: "/info/person/sir.jpg", alt: "Teacher" },
   },
   {
@@ -48,5 +48,19 @@ export const personalities = [
     description:
       "Nelson Mandela was a South African anti-racist revolutionary, political leader, and philanthropist who served as President of South Africa from 1994 to 1999. He was the country's first black head of state and the first elected in a fully representative democratic election. His government focused on dismantling the legacy of racism.",
     pictures: { id: 1, src: "/info/person/nelson.jpg", alt: "Mandela" },
+  },
+  {
+    id: 7,
+    name: "Goutam Buddha",
+    description:
+      "Buddha teaches that inspiration comes from within, rooted in mindfulness, self-awareness, and compassion. He believed in the power of self-reliance, saying, 'Be a light unto yourself.' True inspiration arises when we understand our purpose and let go of attachments that cloud our mind. Through meditation, we can connect with inner peace and wisdom, enabling us to face challenges with clarity and strength. Buddha also emphasized that inspiring others stems from kindness, as our actions ripple outward, influencing the world. By nurturing our inner spirit, we find the motivation to grow and inspire others authentically.",
+    pictures: { id: 1, src: "/info/person/buddha.jpg", alt: "Buddha" },
+  },
+  {
+    id: 8,
+    name: "Adlof Hitler",
+    description:
+      "Adolf Hitler's leadership brought significant changes to Germany, especially in the pre-war years. His government reduced unemployment through large-scale public works like the Autobahn and modernized infrastructure with roads, bridges, and urban projects. Technological innovation flourished, notably in the automotive and aerospace industries, with initiatives like the Volkswagen. He also promoted national unity, physical fitness, and youth engagement through organized programs, leaving a lasting impact on Germany's development during that time.",
+    pictures: { id: 1, src: "/info/person/hitler.jpg", alt: "Hitler" },
   },
 ];

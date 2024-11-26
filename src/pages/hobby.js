@@ -8,16 +8,16 @@ import Skills from "@/components/Skills";
 import { ImageGrid } from "@/components/ImageGrid";
 
 const hobbyList = [
-    { id: 1, src: "/info/travel.jpg", heading: "Travel", link: "/travel" },
+    { id: 1, src: "/info/travel.png", heading: "Travel", link: "/travel" },
     {
       id: 2,
-      src: "/info/games.jpg",
+      src: "/info/games.png",
       heading: "Video Games",
       link: "/games",
     },
     {
       id: 3,
-      src: "/info/movies.jpg",
+      src: "/info/movies.png",
       heading: "Movies",
       link: "/movies",
     },

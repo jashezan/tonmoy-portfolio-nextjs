@@ -6,6 +6,7 @@ import Head from "next/head";
 import AnimatedText from "@/components/AnimatedText";
 import { ImageGrid } from "@/components/ImageGrid";
 import { VIDEO_GAMES } from "@/data/hobby";
+import { hennyPenny } from "./_app";
 
 const TravelPage = () => {
   return (
@@ -22,7 +23,7 @@ const TravelPage = () => {
             className="lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <section className="my-5">
-            <h2 className="text-4xl font-bold">Favourite Games</h2>
+            <h2 className={`text-6xl font-extrabold ${hennyPenny.className}`}>Favourite Games</h2>
             <ImageGrid sampleData={VIDEO_GAMES} />
           </section>
         </Layout>
