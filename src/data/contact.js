@@ -8,7 +8,7 @@ export const TONMOY_CONTACT = {
   fbUrl:"https://www.facebook.com/tonmoy.tonmoy.923519",
   instaUrl: "https://instagram.com/tonmoy678",
   githubUrl: "https://github.com/m-riajul-jannath-tonmoy",
-  cvUrl: "/dummy.pdf",
+  cvUrl: "https://docs.google.com/presentation/d/1cwtRF6JwOLwbahhGICImUMaKkwQrTt1g0ZDiVwlOxH4/edit?usp=sharing",
   email: "tonmoy7218@gmail.com",
   phone: "+8801880514660",
   officialPhone: "+8801300721805"
