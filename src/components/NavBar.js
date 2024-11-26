@@ -12,6 +12,7 @@ import {
   FaSun,
   FaSquareTwitter,
   FaLinkedin,
+  FaWhatsapp,
 } from "react-icons/fa6";
 
 const CustomLink = ({ href, title, className = "" }) => {
@@ -105,8 +106,17 @@ const NavBar = () => {
         </nav>
         <nav className="flex items-center justify-center flex-wrapx">
           <motion.a
+            href={`https://wa.me/${TONMOY_CONTACT.phone}`}
+            target="_blank"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-6 mr-3"
+          >
+            <FaWhatsapp className="h-5 w-5 hover:scale-110" />
+          </motion.a>
+          <motion.a
             href={TONMOY_CONTACT.twitterUrl}
-            target={"_blank"}
+            target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             className="w-6 mr-3"
@@ -115,7 +125,7 @@ const NavBar = () => {
           </motion.a>
           <motion.a
             href={TONMOY_CONTACT.linkedinUrl}
-            target={"_blank"}
+            target="_blank"
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -124,7 +134,7 @@ const NavBar = () => {
           </motion.a>
           <motion.a
             href={TONMOY_CONTACT.fbUrl}
-            target={"_blank"}
+            target="_blank"
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -133,7 +143,7 @@ const NavBar = () => {
           </motion.a>
           <motion.a
             href={TONMOY_CONTACT.instaUrl}
-            target={"_blank"}
+            target="_blank"
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -201,8 +211,17 @@ const NavBar = () => {
           </nav>
           <nav className="flex items-center justify-center flex-wrap mt-2">
             <motion.a
+              href={`https://wa.me/${TONMOY_CONTACT.phone}`}
+              target="_blank"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              className="w-6 mr-3 sm:mx-1"
+            >
+              <FaWhatsapp className="h-5 w-5 hover:scale-110" />
+            </motion.a>
+            <motion.a
               href={TONMOY_CONTACT.twitterUrl}
-              target={"_blank"}
+              target="_blank"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               className="w-6 mr-3 sm:mx-1"
@@ -211,7 +230,7 @@ const NavBar = () => {
             </motion.a>
             <motion.a
               href={TONMOY_CONTACT.linkedinUrl}
-              target={"_blank"}
+              target="_blank"
               className="w-6 mx-3"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -220,7 +239,7 @@ const NavBar = () => {
             </motion.a>
             <motion.a
               href={TONMOY_CONTACT.fbUrl}
-              target={"_blank"}
+              target="_blank"
               className="w-6 mx-3"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -229,7 +248,7 @@ const NavBar = () => {
             </motion.a>
             <motion.a
               href={TONMOY_CONTACT.instaUrl}
-              target={"_blank"}
+              target="_blank"
               className="w-6 mx-3"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
